@@ -7,11 +7,17 @@ import '../widgets/item_card.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+
   const HomePage({Key key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  _HomePageState createState() => _HomePageState();
+
+}
+class _HomePageState extends State<HomePage>{
+  // ignore: non_constant_identifier_names
+  Widget build(BuildContext){
 
     print('build HomePage');
 
